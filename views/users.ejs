@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>lao</h1>
+    <div>
+        <h2>你好, " + <%=reqs.user.username %>+</h2>
+
+        <form method = "post" >
+
+            <input type = "text" name="app_name" />
+
+            <input  type = "text" name="user_id"  value = "<%=reqs.user.objectId %>"/>
+
+            <input type = "submit" value = "创建应用">
+
+
+        </form>
+    </div>
+</body>
+</html>

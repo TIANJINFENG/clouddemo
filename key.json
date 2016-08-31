@@ -1,0 +1,37 @@
+{
+  "allowance": 1000,
+  "rate": 1000,
+  "per": 60,
+  "expires": -1,
+  "quota_max": 3,
+  "quota_renews": 1406121006,
+  "quota_remaining": 0,
+  "quota_renewal_rate": 60,
+  "access_rights": {
+    "b0398b95563741c07b52242f1a3c55c5": {
+      "api_name": "X api",
+      "api_id": "b0398b95563741c07b52242f1a3c55c5",
+      "versions": [
+        "Default"
+      ]
+    }
+  },
+  "org_id": "57ac445e40ab1e0001000004",
+  "meta_data": {},
+  "oauth_client_id": "",
+  "basic_auth_data": {
+    "password": "",
+    "hash_type": ""
+  },
+  "jwt_data": {
+    "secret": ""
+  },
+  "hmac_enabled": false,
+  "hmac_string": "",
+  "is_inactive": false,
+  "apply_policy_id": "",
+  "monitor": {
+    "trigger_limits": []
+  },
+  "tags": []
+}
