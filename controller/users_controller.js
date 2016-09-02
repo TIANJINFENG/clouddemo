@@ -35,9 +35,9 @@ Controllerusers.prototype.relation_app = function(req,res){
 
         app.get('57c3da4f79bc440063e7bc95').then(function (app) {
 
-            var acl = new AV.ACL();
+            //var acl = new AV.ACL();
 
-            var pp = app.getACL(acl)
+           // var pp = app.getACL(acl)
 
             console.log(pp)
 

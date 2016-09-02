@@ -2,9 +2,9 @@ var http = require("http");
 
 var url = require("url");
 
-var visitApi = function(callback){
+var visitApi = function(request,callback){
 
-var strUrl = "http://192.168.1.31:8080/test-api/";
+var strUrl = "http://139.129.221.136:8081/x-api/";
 
 var parse = url.parse(strUrl);
 
@@ -16,7 +16,7 @@ var options = {
     "path"   : parse.path,
     "port"   :parse.port,
     "headers": {
-        "Authorization":"57ac445e40ab1e000100000467576a2c468d43f1629d21c21ae76947"
+        "Authorization":request
     }
 };
 var req = http.request(options, function(res){

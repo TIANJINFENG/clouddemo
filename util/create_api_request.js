@@ -39,7 +39,7 @@ var createapi = function(data,strUrl,callback){
 
             var access= JSON.parse(resData);
 
-            console.log(access)
+           // console.log(access)
 
             callback != undefined && callback(access.key)
 

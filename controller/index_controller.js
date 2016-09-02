@@ -33,12 +33,17 @@ Controllerindex.prototype.logout= function(req,res){
 Controllerindex.prototype.dataBox = function(req,response){
 
     var strUrl = "http://139.129.221.136:8081/tyk/keys/create";
-
-    http_api(key,strUrl, function(datas){
-
-        response.json (datas)
-
+var a = function(cb){
+    http_api(key,strUrl,function(datas){
+        cb(datas)
     })
+}
+    a(function(qwe){
+        console.log("++++++++++++++++++")
+        console.log(qwe)
+        console.log("++++++++++++++++++")
+    })
+
 };
 
 Controllerindex.prototype.create_api= function(req,response){
@@ -54,7 +59,7 @@ Controllerindex.prototype.create_api= function(req,response){
 
 Controllerindex.prototype.visit_api= function(req,response){
 
-    http_visit_api( function(datas){
+    http_visit_api(request, function(datas){
 
         response.json (datas)
 
