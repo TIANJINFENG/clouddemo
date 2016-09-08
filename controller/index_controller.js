@@ -2,6 +2,8 @@
 
 var http_api = require('../util/create_api_request')
 
+var http_key = require('../util/unirest_request')
+
 var http_visit_api = require('../util/visit_api')
 
 var data = require('../data')
@@ -34,7 +36,7 @@ Controllerindex.prototype.dataBox = function(req,response){
 
     var strUrl = "http://139.129.221.136:8081/tyk/keys/create";
 var a = function(cb){
-    http_api(key,strUrl,function(datas){
+    http_key(key,strUrl,function(datas){
         cb(datas)
     })
 }

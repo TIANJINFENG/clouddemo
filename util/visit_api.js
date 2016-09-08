@@ -2,9 +2,9 @@ var http = require("http");
 
 var url = require("url");
 
-var visitApi = function(request,callback){
+var visitApi = function(strUrl, request,callback){
 
-var strUrl = "http://139.129.221.136:8081/x-api/";
+
 
 var parse = url.parse(strUrl);
 
@@ -23,7 +23,7 @@ var req = http.request(options, function(res){
 
     res.setEncoding("utf-8");
 
-    console.log("@@@@@@@@@@@@######")
+    //console.log("@@@@@@@@@@@@######")
 
     var resData = "";
     res.on("data", function(chunk){

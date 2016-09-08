@@ -1,4 +1,4 @@
-var http = require("http");
+/*var http = require("http");
 
 var url = require("url");
 
@@ -27,7 +27,7 @@ var createapi = function(data,strUrl,callback){
 
         res.setEncoding("utf-8");
 
-        console.log("@@@@@@@@@@@@######")
+        //console.log("@@@@@@@@@@@@######")
 
         var resData = "";
 
@@ -51,4 +51,4 @@ var createapi = function(data,strUrl,callback){
     req.end();
 }
 
-module.exports = createapi
+module.exports = createapi*/
