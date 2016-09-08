@@ -12,9 +12,9 @@ module.exports = function(app) {
         return accepter[method].bind(accepter);
 
     };
-    app.get('/',bind(index_controller,"index"));
+    //app.get('/',bind(index_controller,"index"));
 
-    app.post('/', passport.authenticate('local', {successRedirect: '/users', failureRedirect: '/'}));
+    //app.post('/', passport.authenticate('local', {successRedirect: '/users', failureRedirect: '/'}));
 
     app.all('/users', bind(users_controller,"isLoggedIn"));
 

@@ -18,6 +18,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use("/", express.static('public'));
 
 // 设置默认超时时间
 app.use(timeout('15s'));
@@ -42,6 +43,10 @@ app.use(flash())
 
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', todos);
+
+app.get('/',function (req, res){
+  res.redirect('/Demo/views/index.html')
+})
 
 routes(app);
 

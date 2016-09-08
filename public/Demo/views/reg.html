@@ -1,0 +1,61 @@
+<div flex="40" flex-offset="40" layout="column">
+    <md-content class="md-no-momentum">
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Register</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content layout="column" layout-align="space-between">
+                <!--<div class="md-media-xl card-media"></div>-->
+                <md-input-container class="md-icon-float md-block">
+                    <label>Name</label>
+                    <!--<md-icon md-svg-src="img/user1.svg" class="username"></md-icon>-->
+                    <input ng-model="username" type="text">
+                </md-input-container>
+
+                <md-input-container class="md-icon-float md-block">
+                    <label>Password</label>
+                    <input ng-model="password" type="password">
+                </md-input-container>
+
+                <md-input-container md-no-float class="md-block">
+                    <input ng-model="repeatPassword" type="password" placeholder="Repeat Password">
+                </md-input-container>
+
+
+                <md-input-container md-no-float class="md-block">
+                        <input ng-model="phone" type="text" placeholder="Phone Number">
+                </md-input-container>
+
+
+
+                    <div layout="row">
+                        <input ng-model="identifying" type="text">
+                        <md-button class="md-raised" ng-click="fasong()">发送验证码</md-button>
+                    </div>
+
+                <md-input-container class="md-block">
+                    <!-- Use floating placeholder instead of label -->
+                    <input ng-model="email" type="email" placeholder="Email (required)" ng-required="true">
+                </md-input-container>
+
+                <md-card-actions layout="column">
+                    <md-button class="md-raised md-warn" ng-click="registered()">Regist</md-button>
+                </md-card-actions>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
+
+
+
+
+    <!--<div>-->
+        <!--<label>username: <p class="username" ng-bind="namewarn"></p><br/><input type="text" ng-model="username" name="user"                                 /></label> <br>-->
+        <!--<label>password: <p class="password" ng-bind="passwordwarn"></p><br/><input type="password" ng-model="password"/></label> <br>-->
+        <!--<label>repeatPassword: <p class="repeatPassword" ng-bind="repeatwarn"></p><br/><input type="password" ng-model="repeatPassword"/></label><br/>-->
+        <!--<label>email: <p class="email" ng-bind="emailwarn"></p><br/><input type="text" ng-model="email"/></label><br/>-->
+        <!--<label>MobilePhoneNumber:<br/><input type="text" ng-model="phoneName"/></label><br/>-->
+        <!--<input type="button" ng-click="registered()" id="save_info" class="reg" value="save"/>-->
+    <!--</div>-->
