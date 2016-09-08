@@ -13,7 +13,7 @@ unirest.post('http://localhost:3000/users')
  .end(function (response) {
  console.log(response.body);
  });*/
-var unirest =  require("unirest");
+/*var unirest =  require("unirest");
 
 var createapi = function(data,strUrl,callback){
 unirest.post(strUrl)
@@ -30,4 +30,4 @@ console.log("!!!!!!!!!!!!!!!!!");
      console.log("!!!!!!!!!!!!!!!!!")
     });
 };
-module.exports = createapi;
+module.exports = createapi;*/
