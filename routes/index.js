@@ -12,9 +12,9 @@ module.exports = function(app) {
         return accepter[method].bind(accepter);
 
     };
-    //app.get('/',bind(index_controller,"index"));
+    app.get('/',bind(index_controller,"index"));
 
-    //app.post('/', passport.authenticate('local', {successRedirect: '/users', failureRedirect: '/'}));
+    app.post('/', passport.authenticate('local', {successRedirect: '/users', failureRedirect: '/'}));
 
     app.all('/users', bind(users_controller,"isLoggedIn"));
 
@@ -34,9 +34,9 @@ module.exports = function(app) {
 
     app.get('/dataBox', bind(index_controller,"dataBox"));
 
-    app.get('/create_api', bind(index_controller,"create_api"));
+    app.get('/create_api', bind(index_controller,"create_sign"));
 
     app.get('/visit_api', bind(index_controller,"visit_api"));
 
-}
+};
 

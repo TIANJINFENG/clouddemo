@@ -13,21 +13,21 @@ unirest.post('http://localhost:3000/users')
  .end(function (response) {
  console.log(response.body);
  });*/
-/*var unirest =  require("unirest");
+var unirest =  require("unirest");
 
 var createapi = function(data,strUrl,callback){
 unirest.post(strUrl)
     .headers({
      'Content-Type': 'application/json',
-     "x-tyk-authorization":"352d20ee67be67f6340b4c0605b044b7"
+     "Authorization":"2da349cbf8e8477961f8f0de64dbef2e"
     })
     .send(JSON.stringify(data))
     .end(function (response) {
      var access = response.body;
-     callback != undefined && callback(access.key);
-console.log("!!!!!!!!!!!!!!!!!");
-     console.log(response.body);
-     console.log("!!!!!!!!!!!!!!!!!")
+     callback != undefined && callback(access.key_id);
+        console.log("!!!!!!!!!!!!!!!!!");
+        console.log(response.body);
+        console.log("!!!!!!!!!!!!!!!!!")
     });
 };
-module.exports = createapi;*/
+module.exports = createapi;

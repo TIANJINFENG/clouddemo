@@ -6,17 +6,26 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var todos = require('./routes/todos');
 var AV = require('leanengine');
+var md5 = require('js-md5');
 
 var session = require('cookie-session');
 var flash = require('express-flash');
 var passport = require('passport');
 
 var routes = require('./routes/index');
+var settings = require('./settings');
 var app = express();
 
 // 设置模板引擎
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+/*app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+  next();
+});*/
 app.use(express.static('public'));
 app.use("/", express.static('public'));
 

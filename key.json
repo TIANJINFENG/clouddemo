@@ -6,17 +6,17 @@
   "quota_max": 3,
   "quota_renews": 1406121006,
   "quota_remaining": 0,
-  "quota_renewal_rate": 60,
+  "quota_renewal_rate": 86400,
   "access_rights": {
-    "b0398b95563741c07b52242f1a3c55c5": {
-      "api_name": "X api",
-      "api_id": "b0398b95563741c07b52242f1a3c55c5",
+    "5ffd529e30934c68412ef12f3b186c1e": {
+      "api_name": "Test API",
+      "api_id": "5ffd529e30934c68412ef12f3b186c1e",
       "versions": [
         "Default"
       ]
     }
   },
-  "org_id": "57ac445e40ab1e0001000004",
+  "org_id": "57d249276369210eef000003",
   "meta_data": {},
   "oauth_client_id": "",
   "basic_auth_data": {

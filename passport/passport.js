@@ -7,9 +7,16 @@ var AV = require('leanengine');
 
 passport.use( new LocalStrategy(
 
-    function (username, password, done) {
+    function (done) {
+        var user = {
 
-        AV.User.logIn(username, password).then(function (user) {
+            username :'神',
+
+            password : '123'
+        };
+        console.log('111111111111111111111')
+
+        AV.User.logIn(user.username, user.password).then(function (user) {
 
             return done(null, user);
 
